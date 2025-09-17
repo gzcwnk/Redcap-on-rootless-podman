@@ -23,9 +23,13 @@ Place the redcapt1.container and volumes files in ~/.config/containers/systemd/
 Create the volumes, run,
 
 podman volume create systemd-redcapt1-redcap
+
 podman volume create systemd-redcapt1-ssl2
+
 podman volume create systemd-redcapt1-http2
+
 podman volume create systemd-redcapt1-logs
+
 podman volume create systemd-redcapt1-home
 
 This will creat the 5 volumes under ~/.local/share/containers/storage/volumes/
