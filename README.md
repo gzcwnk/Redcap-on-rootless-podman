@@ -36,7 +36,7 @@ This will create the 5 volumes and (directory structure) under ~/.local/share/co
 
 cd ~/podman/redcaptest  and build the conatiner with the command,
 
-podman build -t redcapt1:xx .  # note increment xx as needed do not use latest as it is considfered bad practice.
+podman build -t redcapt1:xx .  # note increment xx as needed do not use "latest" as it is considered bad practice.
 
 Generate the ssl keys and send off to get the certificate.
 
