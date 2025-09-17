@@ -1,0 +1,12 @@
+FROM registry.access.redhat.com/ubi10/ubi
+RUN dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
+RUN dnf update -y
+RUN dnf install -y ImageMagick-devel cronie postfix s-nail nmap httpd php php-fpm mod_ssl php-pear php-mysqlnd php-imagick php-zip php-gd procps-ng openssh-clients net-tools iproute iputils bind-utils wget && dnf clean all
+EXPOSE 25
+EXPOSE 80
+EXPOSE 443
+RUN mkdir -p /var/spool/postfix/pid/
+COPY php.ini /etc/php.ini
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
