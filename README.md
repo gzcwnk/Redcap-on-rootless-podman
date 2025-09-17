@@ -8,7 +8,7 @@ cd ~/podman/redcaptest
 
 Place Containerfile, entrypoint.sh and php.in into  ~/podman/redcaptest
 
-Either add subuid and subgid's ranges locally or to IPA. If using IPA add the line "subid: sss" to /etc/nsswitch.conf
+(As root) Either add subuid and subgid's ranges locally or to IPA. If using IPA add the line "subid: sss" to /etc/nsswitch.conf
 
 logout and ssh back in for change to take effect.
 
@@ -45,6 +45,20 @@ cd /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1
 openssl req -new -newkey rsa:2048 -nodes -keyout example.co.nz.key -out example.co.nz.csr
 
 Place the returned crt files in /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-ssl2/_data/
+
+Download the latest Redcap LTS zip and expand in,
+
+/home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data
+
+copy the contents of ~/redcap sub-directoy up one directory (to /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data) to what will be /var/www/html/   cp -a redcap/* .
+
+Edit database.php setting the database info AND set a salt all of which must be recorded safely.
+
+chmod 0777 modules and temp  sub-directories.
+
+mkdir /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data/archive and copy all the files and directories (especially database.php) to archive for safe keeping. 
+
+
 
 
 
