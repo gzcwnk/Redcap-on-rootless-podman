@@ -32,7 +32,7 @@ podman volume create systemd-redcapt1-logs
 
 podman volume create systemd-redcapt1-home
 
-This will creat the 5 volumes under ~/.local/share/containers/storage/volumes/
+This will create the 5 volumes and (directory structure) under ~/.local/share/containers/storage/volumes/
 
 cd ~/podman/redcaptest  and build the conatiner with the command,
 
