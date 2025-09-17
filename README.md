@@ -38,4 +38,13 @@ cd ~/podman/redcaptest  and build the conatiner with the command,
 
 podman build -t redcapt1:xx .  # note increment xx as needed do not use latest as it is considfered bad practice.
 
-TO BE COMPLETED
+Generate the ssl keys and send off to get the certificate.
+
+cd /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-ssl2/_data
+
+openssl req -new -newkey rsa:2048 -nodes -keyout example.co.nz.key -out example.co.nz.cs
+
+Place the returned crt files in /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-ssl2/_data/
+
+
+
