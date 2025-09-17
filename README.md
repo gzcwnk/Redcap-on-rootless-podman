@@ -34,7 +34,7 @@ podman volume create systemd-redcapt1-home
 
 This will create the 5 volumes and (directory structure) under ~/.local/share/containers/storage/volumes/
 
-cd ~/podman/redcaptest  and build the conatiner with the command,
+cd ~/podman/redcaptest  and build the container with the command,
 
 podman build -t redcapt1:xx .  # note increment xx as needed do not use "latest" as it is considered bad practice.
 
