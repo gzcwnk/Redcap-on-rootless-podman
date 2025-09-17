@@ -34,3 +34,4 @@ cd ~/podman/redcaptest  and build the conatiner with the command,
 
 podman build -t redcapt1:xx .  # note increment xx as needed do not use latest as it is considfered bad practice.
 
+TO BE COMPLETED
