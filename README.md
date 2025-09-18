@@ -49,9 +49,13 @@ Place the returned crt files in /home/svc_redcaptest/.local/share/containers/sto
 Edit the conf.d/ssl.conf file to point at the certificates.  eg.,
 
 8><---
+
 SSLCertificateFile /etc/pki/tls/certs/example.co.nz.crt
+
 SSLCertificateKeyFile /etc/pki/tls/certs/example.co.nz.key
+
 SSLCertificateChainFile /etc/pki/tls/certs/DigiCertCA.crt
+
 8><---
 
 Download the latest Redcap LTS zip and expand in,
