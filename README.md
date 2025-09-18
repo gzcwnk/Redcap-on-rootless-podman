@@ -64,7 +64,9 @@ Download the latest Redcap LTS zip and expand in,
 
 /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data
 
-copy the contents of ~/redcap sub-directoy up one directory (to /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data) to what will be /var/www/html/   cp -a redcap/* .
+copy the contents of ~/redcap sub-directoy up one directory (to /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data) to what will be /var/www/html/   
+
+cp -a redcap/* .
 
 Edit database.php setting the database info AND set a salt all of which must be recorded safely.
 
