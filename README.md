@@ -56,7 +56,8 @@ Edit database.php setting the database info AND set a salt all of which must be 
 
 chmod 0777 modules and temp  sub-directories.
 
-mkdir /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data/archive and copy all the files and directories (especially database.php) to archive for safe keeping. 
+mkdir /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data/archive and copy all the files and directories 
+(especially database.php) to archive for safe keeping as you will need files to recover from an upgrade gone wrong.
 
 
 
