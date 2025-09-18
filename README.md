@@ -81,6 +81,11 @@ systemctl --user daemon-reload
 
 systemctl --user start redcapt1.service
 
+At this point you should be running on port 8081.
+
+https://example.co.nz:8081
+
+You will now need an Apache, Nginx or a commercial proxy in front of the server to direct port 443 to 8081.
 
 
 
