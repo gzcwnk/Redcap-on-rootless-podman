@@ -46,6 +46,8 @@ openssl req -new -newkey rsa:2048 -nodes -keyout example.co.nz.key -out example.
 
 Place the returned crt files in /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-ssl2/_data/
 
+cd /home/svc_redcapdev/.local/share/containers/storage/volumes/systemd-httpd1-http/_data/conf.d
+
 Edit the conf.d/ssl.conf file to point at the certificates.  eg.,
 
 8><---
