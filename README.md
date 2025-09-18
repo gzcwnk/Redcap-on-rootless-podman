@@ -46,6 +46,14 @@ openssl req -new -newkey rsa:2048 -nodes -keyout example.co.nz.key -out example.
 
 Place the returned crt files in /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-ssl2/_data/
 
+Edit the conf.d/ssl.conf file to point at the certificates.  eg.,
+
+8><---
+SSLCertificateFile /etc/pki/tls/certs/example.co.nz.crt
+SSLCertificateKeyFile /etc/pki/tls/certs/example.co.nz.key
+SSLCertificateChainFile /etc/pki/tls/certs/DigiCertCA.crt
+8><---
+
 Download the latest Redcap LTS zip and expand in,
 
 /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data
