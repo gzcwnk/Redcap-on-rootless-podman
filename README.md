@@ -62,9 +62,10 @@ mkdir /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redca
 Now run,
 
 systemctl --user daemon-reload
+
 systemctl --user start redcapt1.service
 
-<img width="434" height="55" alt="image" src="https://github.com/user-attachments/assets/2a5f03ff-f996-4e63-983a-da90534c8f69" />
+
 
 
 
