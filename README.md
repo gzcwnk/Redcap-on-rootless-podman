@@ -59,6 +59,10 @@ chmod 0777 modules and temp  sub-directories.
 mkdir /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data/archive and copy all the files and directories 
 (especially database.php) to archive for safe keeping as you will need files to recover from an upgrade gone wrong.
 
+Now run,
+
+systemctl --user daemon-reload
+systemctl --user start redcapt1.service<img width="434" height="55" alt="image" src="https://github.com/user-attachments/assets/2a5f03ff-f996-4e63-983a-da90534c8f69" />
 
 
 
