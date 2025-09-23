@@ -88,6 +88,11 @@ https://example.co.nz:8081
 You will now need an Apache, Nginx or a commercial proxy in front of the server to direct port 443 to 8081.
 
 
+NOTES
+
+A crontab needs to be set as the rootless account that will trigger an internal cleanup, example provided.
+
+
 
 
 
