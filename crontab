@@ -1,1 +1,1 @@
-* * * * *  /usr/bin/curl  https://redcaptest.vuw.ac.nz:8081/cron.php >/dev/null 2>&1
+* * * * *  /usr/bin/curl  https://redcaptest.xxxxx:8081/cron.php >/dev/null 2>&1
