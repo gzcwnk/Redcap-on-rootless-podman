@@ -24,9 +24,9 @@ Create the volumes, run,
 
 podman volume create systemd-redcapt1-redcap
 
-podman volume create systemd-redcapt1-ssl2
+podman volume create systemd-redcapt1-ssl
 
-podman volume create systemd-redcapt1-http2
+podman volume create systemd-redcapt1-http
 
 podman volume create systemd-redcapt1-logs
 
