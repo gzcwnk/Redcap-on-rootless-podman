@@ -40,11 +40,11 @@ podman build -t redcapt1:xx .  # note increment xx as needed do not use "latest"
 
 Generate the ssl keys and send off to get the certificate.
 
-cd /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-ssl2/_data
+cd /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-ssl/_data
 
 openssl req -new -newkey rsa:2048 -nodes -keyout example.co.nz.key -out example.co.nz.csr
 
-Place the returned crt files in /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-ssl2/_data/
+Place the returned crt files in /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-ssl/_data/
 
 cd /home/svc_redcapdev/.local/share/containers/storage/volumes/systemd-httpd1-http/_data/conf.d
 
@@ -64,7 +64,7 @@ Download the latest Redcap LTS zip and expand in,
 
 /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data
 
-copy the contents of ~/redcap sub-directoy up one directory (to /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data) to what will be /var/www/html/   
+copy the contents of the ~redcap sub-directory created up one directory (to /home/svc_redcaptest/.local/share/containers/storage/volumes/systemd-redcapt1-redcap/_data (to what will be /var/www/html/)   
 
 cp -a redcap/* .
 
