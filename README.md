@@ -1,4 +1,4 @@
-ssh in ( do not sudo ) as the user who will run the rootless container, in this case svc_redcaptest (this is the test environment)
+ssh in ( do not sudo ) as the user who will run the rootless container, in this case the user is called, svc_redcaptest (this is the test environment)
 
 Create the build directory
 
