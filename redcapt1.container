@@ -7,9 +7,9 @@ Network=redcaptest
 Label="io.containers.autoupdate=registry" 
 Environment=TZ=Pacific/Auckland 
 Environment=VERSION=docker 
-Volume=systemd-redcapt1-http2:/etc/httpd:U,Z
+Volume=systemd-redcapt1-http:/etc/httpd:U,Z
 Volume=systemd-redcapt1-redcap:/var/www/html:U,Z 
-Volume=systemd-redcapt1-ssl2:/etc/pki/tls/certs/:U,Z 
+Volume=systemd-redcapt1-ssl:/etc/pki/tls/certs/:U,Z 
 Volume=systemd-redcapt1-postfix:/etc/postfix:U,Z 
 Volume=systemd-redcapt1-logs:/var/log:U,Z 
 Volume=systemd-redcapt1-home:/home:U,Z 
