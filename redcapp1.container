@@ -1,7 +1,7 @@
 [Service] 
 Restart=unless-stopped 
 [Container] 
-ContainerName=redcapt1 
+ContainerName=redcapp1 
 Image=localhost/redcapp1:01
 Network=redcap
 Label="io.containers.autoupdate=registry" 
