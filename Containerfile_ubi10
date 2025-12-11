@@ -1,6 +1,9 @@
-FROM registry.access.redhat.com/ubi10/ubi
+FROM  vuwunicorhsat01.ods.vuw.ac.nz/its-servers/library/ubi10/ubi10-images/ubi10_ubi:10
+#FROM  vuwunicorhsat01.ods.vuw.ac.nz/its-servers/library/ubi10/ubi10-images/ubi10_ubi:10.0
+#FROM vuwunicorhsat01.ods.vuw.ac.nz/its-servers/ubi10/ubi10/ubi10-images/ubi10_ubi:latest
 RUN dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-10.noarch.rpm
 RUN dnf update -y
+#RUN dnf install -y ImageMagick-devel cronie postfix s-nail nmap httpd php php-fpm php-pear php-mysqlnd php-imagick php-zip php-gd procps-ng openssh-clients net-tools iproute iputils bind-utils wget && dnf clean all
 RUN dnf install -y ImageMagick-devel cronie postfix s-nail nmap httpd php php-fpm mod_ssl php-pear php-mysqlnd php-imagick php-zip php-gd procps-ng openssh-clients net-tools iproute iputils bind-utils wget && dnf clean all
 EXPOSE 25
 EXPOSE 80
