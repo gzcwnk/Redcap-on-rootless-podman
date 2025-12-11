@@ -1,4 +1,4 @@
-[Service] 
+Service] 
 Restart=unless-stopped 
 [Container] 
 ContainerName=redcapp1 
@@ -8,12 +8,13 @@ Label="io.containers.autoupdate=registry"
 Environment=TZ=Pacific/Auckland 
 Environment=VERSION=docker 
 Volume=systemd-redcapp1-http:/etc/httpd:U,z
+Volume=systemd-redcapp1-ssl:/etc/pki/:U,z 
 Volume=systemd-redcapp1-redcap:/var/www/html:U,z 
-Volume=systemd-redcapp1-ssl:/etc/pki/tls/certs/:U,z
-Volume=systemd-redcapp1-postfix:/etc/postfix:U,z
-Volume=systemd-redcapp1-logs:/var/log:U,z
-Volume=systemd-redcapp1-home:/home:U,z
+Volume=systemd-redcapp1-postfix:/etc/postfix:U,z 
+Volume=systemd-redcapp1-logs:/var/log:U,z 
+Volume=systemd-redcapp1-home:/home:U,z 
 PublishPort=8080:80/tcp 
 PublishPort=8081:443/tcp 
 [Install] 
 WantedBy=default.target
+
