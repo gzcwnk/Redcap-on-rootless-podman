@@ -81,6 +81,12 @@ systemctl --user daemon-reload
 
 systemctl --user start redcapt1.service
 
+Set linger so the container does not shut down when you logout, as root,
+
+loginctl enable-linger svc_redcaptest (user or better a service account)
+
+This will keep the container running.
+
 At this point you should be running on port 8081.
 
 https://example.co.nz:8081
